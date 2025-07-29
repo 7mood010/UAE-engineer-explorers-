@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Robotics Engineering | Engineers Explorers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d0d0d;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+    header {
+      background: #111;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,255,255,0.3);
+    }
+    header h1 {
+      color: #00eaff;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #00ffe0;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      color: #ccc;
+      line-height: 1.7;
+    }
+    .highlight {
+      color: #00ffe0;
+      font-weight: bold;
+    }
+    .info-box {
+      background: #1a1a1a;
+      border-left: 5px solid #00eaff;
+      padding: 1.2rem;
+      margin: 2rem 0;
+      box-shadow: 0 0 10px rgba(0,255,255,0.1);
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #00eaff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    a.button:hover {
+      background: #00bcd4;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .home-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 18px;
+      background: #00eaff;
+      color: black;
+      font-weight: bold;
+      font-size: 0.9rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00eaff;
+      z-index: 1000;
+      transition: 0.3s ease;
+    }
+    .home-btn:hover {
+      background: #00bcd4;
+      transform: scale(1.05);
+      color: #000;
+    }
+
+    /* Carousel Styles */
+    .carousel-wrapper {
+      overflow: hidden;
+      margin-top: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00eaff;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: max-content;
+      gap: 20px;
+    }
+    .carousel-item {
+      flex: 0 0 300px;
+      height: 200px;
+    }
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00eaff;
+    }
+  </style>
+</head>
+<body>
+
+<a href="engindex.html" class="home-btn">← Home</a>
+
+<header>
+  <h1>Robotics Engineering</h1>
+</header>
+
+<section class="section" data-aos="fade-up">
+  <h2>🤖 What is Robotics Engineering?</h2>
+  <p>Robotics Engineering combines mechanical, electrical, and software engineering to create robots that assist, automate, or explore environments. From industrial arms to Mars rovers, it’s the <span class="highlight">core of intelligent machines</span>.</p>
+</section>
+
+<section class="section" data-aos="fade-up">
+  <h2>⚙️ How Does It Work?</h2>
+  <p>Robotics involves designing mechanical parts (arms, wheels), electronics (sensors, power), and programming (AI, movement, behavior). All systems are integrated to allow autonomous or remote-controlled function.</p>
+  <div class="info-box">
+    Example: A robotic delivery drone uses GPS, cameras, sensors, motors, and AI to fly, avoid obstacles, and drop packages accurately.
+  </div>
+</section>
+
+<section class="section" data-aos="fade-up">
+  <h2>💼 Career Paths & UAE Salary</h2>
+  <ul>
+    <li>Automation Engineer</li>
+    <li>Robot Design Specialist</li>
+    <li>AI & Embedded Systems Engineer</li>
+    <li>Mechatronics Technician</li>
+  </ul>
+  <p>💰 <span class="highlight">Average Salary in UAE:</span> AED 18,000 – 35,000/month  
+  (Source: <a href="https://www.salaryexplorer.com/" target="_blank" style="color:#00ffe0;">Salary Explorer</a>)</p>
+</section>
+
+<section class="section" data-aos="fade-up">
+  <h2>🧠 Skills You Need</h2>
+  <ul>
+    <li>Programming (C++, Python, ROS)</li>
+    <li>Mechanical and electrical design</li>
+    <li>Control systems and AI logic</li>
+    <li>3D modeling (CAD) & simulation</li>
+  </ul>
+</section>
+
+<section class="section" data-aos="fade-up">
+  <h2>🎓 Top Universities</h2>
+  <ul>
+    <li><strong>UAE:</strong> Khalifa University, AUS, Rochester Institute of Technology (RIT Dubai)</li>
+    <li><strong>Worldwide:</strong> MIT, Carnegie Mellon, ETH Zurich, Tokyo Tech</li>
+  </ul>
+  <p>Requirements: Strong math/physics, coding background, and creative mindset.</p>
+</section>
+
+<section class="section" data-aos="fade-up">
+  <h2>🚀 Get Involved!</h2>
+  <p>Start building your own robots or enter global challenges like:</p>
+  <ul>
+    <li>VEX Robotics Competition</li>
+    <li>FIRST Robotics</li>
+    <li>UAE AI and Robotics for Good</li>
+  </ul>
+  <a href="https://www.roboticschallenge.org/" class="button" target="_blank">Explore Challenges</a>
+</section>
+
+<section class="section" data-aos="fade-up">
+  <h2>🦾 Robotics in Action</h2>
+  <p></p>
+  <div class="carousel-wrapper">
+    <div class="carousel-track" id="robotics-carousel">
+      <div class="carousel-item"><img src="image/robo/robo 1.jpg" alt="Robot Arm"></div>
+      <div class="carousel-item"><img src="/image/robo/robo 2.jpg" alt="Drone Tech"></div>
+      <div class="carousel-item"><img src="image/robo/robo 3.jpg" alt="Automation"></div>
+      <!-- Add more up to 60 images -->
+    </div>
+  </div>
+</section>
+
+<section class="section" data-aos="fade-up">
+  <h2>🌟 Why Robotics?</h2>
+  <p>Because it brings life to machines. Robotics lets you build what only used to exist in movies. You create the future — one robot at a time.</p>
+</section>
+
+<footer>
+  Back to <a href="engindex.html" style="color:#00eaff;">Engineers Explorers Home</a> |
+  © 2025 Engineers Explorers
+</footer>
+
+<!-- AOS + Carousel Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000 });</script>
+
+<script>
+  const track = document.getElementById("robotics-carousel");
+  let scrollAmount = 0;
+  const scrollStep = 320;
+  const maxScroll = track.scrollWidth - track.clientWidth;
+
+  setInterval(() => {
+    scrollAmount += scrollStep;
+    if (scrollAmount >= maxScroll) scrollAmount = 0;
+    track.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+  }, 5000);
+</script>
+
+</body>
+</html>
