@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Engineers Explorers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    /* === BASE STYLES === */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0a0a0a;
+      color: white;
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* === NAVBAR === */
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      box-shadow: 0 0 10px rgba(0,255,255,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: cyan;
+      font-size: 1.8rem;
+    }
+    .nav-links a {
+      margin-left: 1.5rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #00ffe0;
+    }
+
+    /* === HERO SECTION === */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(135deg, #000428, #004e92);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      color: #00eaff;
+      font-family: 'Orbitron', sans-serif;
+      text-shadow: 0 0 15px cyan;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      color: #ccc;
+      animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #00eaff;
+      width: 0;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 90%; }
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    /* === ENGINEERING SECTION === */
+    .sections {
+      padding: 4rem 2rem;
+      background-color: #0d0d0d;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .eng-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 2rem;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      box-shadow: 0 0 10px rgba(0,255,255,0.1);
+      cursor: pointer;
+    }
+    .eng-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(0,255,255,0.4);
+    }
+    .eng-card h3 {
+      color: #00ffe0;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+    .eng-card p {
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+
+    /* === CONTACT === */
+    .contact {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #111;
+    }
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #00ffff;
+    }
+    .contact p {
+      color: #ccc;
+    }
+
+    /* === FOOTER === */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #000;
+      color: #777;
+      font-size: 0.8rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h1>Engineers Explorers</h1>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="engsoftware.html">Software</a>
+      <a href="engaerospace.html">Aerospace</a>
+      <a href="engmechanical.html">Mechanical</a>
+      <a href="engrobotics.html">Robotics</a>
+      <a href="engastrophysics.html">Astrophysics</a>
+      <a href="engnuclear.html">Nuclear</a>
+      <a href="engenvironmental.html">Environmental</a>
+      <a href="engcontact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h2>Welcome to Engineers Explorers</h2>
+    <p>Explore. Learn. Build. Engineer the Future.</p>
+  </section>
+
+  <!-- ENGINEERING CARDS -->
+  <section class="sections">
+    <a href="engsoftware.html" class="eng-card" data-aos="fade-up">
+      <h3>Software Engineering</h3>
+      <p>Code the future apps, AI, systems, and more.</p>
+    </a>
+    <a href="engaerospace.html" class="eng-card" data-aos="fade-up">
+      <h3>Aerospace Engineering</h3>
+      <p>Rockets, planes, satellites reach the skies.</p>
+    </a>
+    <a href="engmechanical.html" class="eng-card" data-aos="fade-up">
+      <h3>Mechanical Engineering</h3>
+      <p>Design machines, engines, and powerful systems.</p>
+    </a>
+    <a href="engrobotics.html" class="eng-card" data-aos="fade-up">
+      <h3>Robotics Engineering</h3>
+      <p>Build the next generation of smart machines.</p>
+    </a>
+    <a href="engastrophysics.html" class="eng-card" data-aos="fade-up">
+      <h3>Astrophysics</h3>
+      <p>Explore black holes, galaxies, and space mysteries.</p>
+    </a>
+    <a href="engnuclear.html" class="eng-card" data-aos="fade-up">
+      <h3>Nuclear Engineering</h3>
+      <p>Harness atomic power safely and effectively.</p>
+    </a>
+    <a href="engenvironmental.html" class="eng-card" data-aos="fade-up">
+      <h3>Environmental Engineering</h3>
+      <p>Protect the Earth with science and technology.</p>
+    </a>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <h2>📩 Contact Us</h2>
+    <p>Want to join or ask something? Email: <strong>st2009am@gmail.com</strong><br>
+    or go to the contact page</p>
+  </section>
+
+
+  
+  <footer>
+    © 2025 Engineers Explorers. All rights reserved.
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
